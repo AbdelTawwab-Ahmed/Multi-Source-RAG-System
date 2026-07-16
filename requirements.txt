@@ -1,0 +1,10 @@
+langchain
+langchain-google-genai
+langchain-community
+langchain-chroma
+langchain-text-splitters
+chromadb
+pypdf
+beautifulsoup4
+python-dotenv
+numpy
