@@ -1,0 +1,39 @@
+Session 1 :
+
+	- DBMS may be incompatible with other available DBMSs!  ===> Solution in microsoft (sql server) :-  Convert another db file into (XML) then convert (XML) to (SQL).
+	
+	- SRS ==> Software Requirements Specification   |  RSD ==> Requirements Specification Document
+
+	- Entities ==>  Strong Entity :- Independent (don't depend on existence of any other entity)  |  Weak Entity :- Dependent (depend on existence of another entity).
+
+	- Derived Attribute ==> (Easy Computation) - (Not be mapped).
+
+	- If Degree of relationship = Binary & Cardinality = M : M   ===> I don't need to know the participation (as it has only one style during mapping).
+
+	- If Degree of relationship = Ternary   ===> I don't need to know the cardinality nor participation (as it has only one style during mapping).
+
+	- Partial key  ==> Primary key for (Weak Entity)   `Note :- We have no key called partial key in physical database. 
+
+	- Mapping multivalued attribute always in new relation with composite key (foreign key + multivalued property).
+
+	
+
+Session 2
+
+	- Froeign Key ==> ON DELETE :-    1) NO ACTION   2) CASACDE   3) SET NULL   4) SET DEFAULT
+
+		             ON UPDATE :-   1) NO ACTION   2) CASCADE   3) SET NULL   4) SET DEFAULT
+
+	
+	
+	- Anything beside aggregate function and it's not an aggregate function  ==> Should put into "Group By".
+	 
+	- Get the oldest/youngest/max/min person in each department/section  ===> Use Ranking( Row_Number( ) )  &  Partition By .
+
+	- Excution order  ===> From  >  Join  >  On  >  Where  >  Group By  >  Having  >  Select  >  Order By  >  Top .
+
+	- Select  =>  DQL   ||   Select Into  => DDL  ``Used to take a clone or copy of table [structure, data]    ==>   Part11 (Session5)
+
+	- Insert based on Select   ==>   Part11 (Session5)
+
+	- Don't forget to search for (super key, compound key, alternate key)  ||  ||  self-relationship(M:N)  ||  decimal default  ||  on delete, on update => set default  ||  insert + join  ||  Aggregate functions  ||  Format function  ||  String functions  ||  Rank()  ||  Control (case - iif - choose).
